@@ -17,4 +17,4 @@ Now go to [localhost](http://localhost/) and see your beautiful webpage!
 Or go to http://localhost:8077/ to see that phpmyadmin!
 
 ## Notes:
-No notes yet :) 
+If you don't want/need composer for whatever reason comment the code in `docker/php/Dockerfile`

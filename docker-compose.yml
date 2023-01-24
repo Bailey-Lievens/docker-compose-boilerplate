@@ -15,7 +15,7 @@ services:
       - mysql:/var/lib/mysql
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    build: ./docker/php/
     restart: always
     ports:
       - '8077:80'
