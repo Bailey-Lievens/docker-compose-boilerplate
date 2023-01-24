@@ -1,14 +1,14 @@
-version: '1.0.0'
+version: ${APP_VERSION}
 
 services:
   mysql:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_DATABASE: symfony_database
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_USER: user
-      MYSQL_PASSWORD: user_password
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - '3306:3306'
     volumes:
