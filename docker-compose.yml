@@ -15,7 +15,7 @@ services:
       - mysql:/var/lib/mysql
 
   phpmyadmin:
-    build: ./docker/php/
+    image: phpmyadmin/phpmyadmin
     restart: always
     ports:
       - '8077:80'
@@ -25,7 +25,7 @@ services:
       - mysql
 
   web:
-    image: php:8.1-apache
+    build: ./docker/php
     ports:
       - '80:80'
     volumes:
