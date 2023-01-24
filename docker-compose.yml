@@ -30,6 +30,8 @@ services:
       - '80:80'
     volumes:
       - ./app:/var/www/html/
+    environment:
+      INDEX_PATH: ${INDEX_PATH}
 
 volumes:
   mysql:
