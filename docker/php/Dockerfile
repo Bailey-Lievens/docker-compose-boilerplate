@@ -31,6 +31,6 @@ RUN npm install yarn --global
 RUN a2enmod rewrite
 
 # Changing document root to specific folder
-RUN sed -ri -e 's!/var/www/html!${INDEX_PATH}!g' /etc/apache2/sites-available/*.conf
-RUN sed -ri -e 's!/var/www/!${INDEX_PATH}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+RUN sed -ri -e "s!/var/www/html!${INDEX_PATH}!g" /etc/apache2/sites-available/*.conf
+RUN sed -ri -e "s!/var/www/!${INDEX_PATH}!g" /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
