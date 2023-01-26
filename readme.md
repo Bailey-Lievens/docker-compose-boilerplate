@@ -23,4 +23,4 @@ Or go to http://localhost:8077/ to see that phpmyadmin!
 - `docker exec -ti <docker_container_name> /bin/bash` Start a terminal session in a specific container
 
 ## Notes:
-If you don't want/need composer for whatever reason comment the code in `docker/php/Dockerfile`
+This repository comes with Composer and Yarn installed. To disable any of these you can comment/delete them in [docker/php/Dockerfile](docker/php/Dockerfile)
