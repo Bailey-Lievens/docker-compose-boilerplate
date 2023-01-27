@@ -21,6 +21,10 @@ Encore
     })
     .enableSassLoader()
     .enableTypeScriptLoader()
+    .copyFiles({
+        from: './assets/images',
+        to: 'images/[path][name].[ext]',
+    })
 
 Encore.configureWatchOptions(options => {
     options.poll = 250;
