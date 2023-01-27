@@ -21,6 +21,9 @@ Encore
     })
     .enableSassLoader()
     .enableTypeScriptLoader()
-;
+
+Encore.configureWatchOptions(options => {
+    options.poll = 250;
+});
 
 module.exports = Encore.getWebpackConfig();
